@@ -1,0 +1,11 @@
+# Project (short name)
+project           = "bb"
+
+# Project (long name)
+project_long      = "binbash"
+
+# AWS Region for DR replication (required by the backend but also used for other resources)
+region_secondary  = "us-west-2"
+
+# GitLab Token
+gitlab_token = "ADD YOUR PERSONAL GITLAB TOKEN HERE"
