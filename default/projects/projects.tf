@@ -28,3 +28,14 @@ resource "gitlab_project" "le_sample_backend_app" {
 
   remove_source_branch_after_merge = true
 }
+
+resource "gitlab_project" "le_gitlab_automation" {
+  name             = "Leverage Gitlab Automation"
+  path             = "le-gitlab-automation"
+  description      = "Utilities and scripts that are useful for Automation"
+  namespace_id     = gitlab_group.binbash_leverage.id
+  visibility_level = "private"
+
+  remove_source_branch_after_merge = true
+}
+
